@@ -5,7 +5,7 @@ class JokesController < ApplicationController
   def index
     @jokes = Joke.all
 
-    render json: @jokes, status: 200
+    render json: @jokes, status: 200, root: 'jokes'
   end
 
   # GET /jokes/1
