@@ -1,3 +1,3 @@
 # config/initializers/active_model_serializer.rb
-#ActiveModel::Serializer.config.adapter = ActiveModel::Serializer::Adapter::JsonApi
-ActiveModelSerializers.config.adapter = :json_api
+# Ref: https://github.com/rails-api/active_model_serializers/blob/master/docs/howto/add_root_key.md
+ActiveModelSerializers.config.adapter = :json

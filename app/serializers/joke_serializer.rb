@@ -1,3 +1,3 @@
-class JokeSerializer < ActiveModel::Serializer
+class JokeSerializer < ApplicationSerializer
   attributes :id, :body
 end
