@@ -3,7 +3,7 @@ class JokesController < ApplicationController
 
   # GET /jokes
   def index
-    @jokes = Joke.all
+    @jokes = Joke.all.sample(1)
 
     render json: @jokes, status: 200, root: 'jokes'
   end
